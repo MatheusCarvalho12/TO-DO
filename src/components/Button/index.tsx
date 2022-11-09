@@ -1,10 +1,11 @@
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 interface ButtonProps {
   text: string;
   onClick: React.MouseEventHandler<HTMLButtonElement>;
   isDisabled?: boolean;
 }
+
 function Button({ text, onClick, isDisabled }: ButtonProps) {
   return (
     <div className={styles.Button}>
@@ -12,8 +13,7 @@ function Button({ text, onClick, isDisabled }: ButtonProps) {
         className="button"
         id={text}
         onClick={onClick}
-        disabled={isDisabled}
-      >
+        disabled={isDisabled}>
         {text}
       </button>
     </div>
