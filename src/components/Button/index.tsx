@@ -8,7 +8,12 @@ interface ButtonProps {
 function Button({ text, onClick, isDisabled }: ButtonProps) {
   return (
     <div className={styles.Button}>
-      <button className="button" onClick={onClick} disabled={isDisabled}>
+      <button
+        className="button"
+        id={text}
+        onClick={onClick}
+        disabled={isDisabled}
+      >
         {text}
       </button>
     </div>
